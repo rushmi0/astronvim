@@ -45,8 +45,8 @@ return {
       
      v = {
         
-        ["<Leader>/"] = { function() require('Comment.api').toggle.linewise(vim.fn.visualmode()) end, desc = "Comment" },
-      }
+        ["<Leader>/"] = { function() require('Comment.api').toggle.linewise(vim.fn.visualmode()) end, desc = "Multi-line comments" },
+      },
 
       -- first key is the mode
       n = {
