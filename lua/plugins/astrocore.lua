@@ -42,6 +42,12 @@ return {
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
+      
+     v = {
+        
+        ["<Leader>/"] = { function() require('Comment.api').toggle.linewise(vim.fn.visualmode()) end, desc = "Comment" },
+      }
+
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
